@@ -12,8 +12,15 @@ import './style.css';
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
-  const [state, dispatch] = useStoreContext();
+
+  //adding actions to the argument
+  //use -all components -reads data from the state and/or dispatch 
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state);
+  // const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+
+ 
 
   useEffect(() => {
     if (data) {
@@ -22,6 +29,8 @@ const Cart = () => {
       });
     }
   }, [data]);
+
+  
 
   useEffect(() => {
     async function getCart() {
