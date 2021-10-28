@@ -1,4 +1,4 @@
-### License: MIT
+#### License: MIT
 ### ReduxShop
 ### Table of Contents
 ### Description
@@ -38,11 +38,6 @@ SOFTWARE.
 ## Contributor/Author
 Lajaynees I
 
+## Questions
+For any questions : lscingram@yahoo.com
 
-
-
-
-8. Questions
-For any questions you can email me at: gmcmurray1493@gmail.com
-
-My github username is gmcmurray
